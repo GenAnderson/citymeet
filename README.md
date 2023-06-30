@@ -78,3 +78,7 @@ Serverless, PWA using React and a TDD approach
 **Given** the user is on the main page with no selected city
 **When** the user wants to see the number of events between cities
 **Then** they should be able to see a chart with that information
+
+### USING SERVERLESS FUNCTIONS FOR THIS APP
+
+I'll be using serverless functions for the logic behind the filtering that will be done in feature 1 when the user searches for a city. In addition to that, feature 3 which allows the event results to show by a specified number will also incorporate serverless functions.
