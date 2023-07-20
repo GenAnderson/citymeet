@@ -1,7 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+@import url(https://fonts.googleapis.com/css?family=Kanit:ital,wght@0,300;0,600;0,800;1,400;);
 .App {
   text-align: center;
   padding: 2% 5%;
+  font-family: "Kanit";
+  background-color: #219ebc;
+}
+
+.App > h1 {
+  color: #222;
+  border-top: #023047 solid 5px;
+  border-bottom: #023047 solid 5px;
 }
 
 .App * {
@@ -28,6 +36,7 @@ input[type="number"] {
   align-self: center;
   height: 38px;
   margin-bottom: 20px;
+  font: inherit;
 }
 
 .city {
@@ -75,14 +84,39 @@ input[type="number"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   position: relative;
+  box-shadow: 1px 2px 4px #023047;
+  background-color: white;
+}
+
+.event:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 4px 6px 8px #023047;
+  transition: ease 0.1s;
 }
 
 .details-btn {
+  font-family: inherit;
+  font-weight: 600;
   position: absolute;
   right: 5px;
   bottom: 5px;
   padding: 5px 8px;
   border-radius: 4px;
+  border: none;
   outline: none;
   cursor: pointer;
+  background-color: #ffb703;
+  box-shadow: 1px 2px 4px #222;
+}
+
+.details-btn:hover {
+  background-color: #ffb8039c;
+  box-shadow: inset 1px 1.2px 3px #222;
+}
+
+.event-details {
+  background-color: #8ecae6;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
 }

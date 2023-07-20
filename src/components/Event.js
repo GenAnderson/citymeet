@@ -20,7 +20,7 @@ const Event = ({ event }) => {
 
       <p className="created">{date}</p>
       <p className="location">{location}</p>
-      <button onClick={detailsHandler}>
+      <button className="details-btn" onClick={detailsHandler}>
         {!showDetails ? "show details" : "hide details"}
       </button>
 
