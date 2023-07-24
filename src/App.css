@@ -8,6 +8,7 @@
 
 .App > h1 {
   color: #222;
+  padding: 5px 0px;
   border-top: #023047 solid 5px;
   border-bottom: #023047 solid 5px;
 }
