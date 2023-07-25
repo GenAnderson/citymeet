@@ -35,3 +35,26 @@ describe("show/hide an event details", () => {
     expect(eventDetails).toBeNull();
   });
 });
+
+describe("filter events by city", () => {
+  let browser;
+  let page;
+
+  beforeAll(async () => {
+    browser = await puppeteer.launch({
+      // headless: false,
+      // slowMo: 250,
+      // timeout: 0,
+    });
+    page = await browser.newPage();
+    await page.goto("http://localhost:3000/");
+    await page.waitForSelector(".event");
+  });
+  afterAll(() => {
+    browser.close();
+  });
+
+  test("user hasn't searched for any city", () => {});
+  test("user opens the app", () => {});
+  test("user should see the list of all upcoming events", () => {});
+});

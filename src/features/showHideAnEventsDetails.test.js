@@ -1,5 +1,5 @@
 import { loadFeature, defineFeature } from "jest-cucumber";
-import { render, waitFor, within } from "@testing-library/react";
+import { queryByRole, render, waitFor, within } from "@testing-library/react";
 import App from "../App";
 import userEvent from "@testing-library/user-event";
 
@@ -76,25 +76,17 @@ defineFeature(feature, (test) => {
     let AppComponent;
     let button;
 
-    given("the user has selected an event from the results list", async () => {
+    given("the user has selected an event from the list", async () => {
       AppComponent = render(<App />);
       const AppDOM = AppComponent.container.firstChild;
 
-      const citySearchInput = AppDOM.querySelector("#city-search");
-      await userEvent.type(citySearchInput, "Berlin");
+      button = AppDOM.querySelectorAll(".details-btn");
 
-      const resultsList = within(citySearchInput).queryAllByRole("listitem");
-      await userEvent.click(resultsList[0]);
-
-      const eventList = AppDOM.querySelector("#event-list");
-      const event = eventList.querySelectorAll(".event");
-      button = event[0].querySelector(".details-btn");
-
-      await userEvent.click(button);
+      await userEvent.click(button[0]);
     });
 
     when("the user clicks on the event again", async () => {
-      await userEvent.click(button);
+      await userEvent.click(button[0]);
     });
 
     then("the event will collapse and hide its details", async () => {
