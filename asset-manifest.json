@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/citymeet/static/css/main.590fe03f.css",
-    "main.js": "/citymeet/static/js/main.23d751fa.js",
+    "main.css": "/citymeet/static/css/main.1b2bd587.css",
+    "main.js": "/citymeet/static/js/main.73ce5d78.js",
     "static/js/787.fc996c60.chunk.js": "/citymeet/static/js/787.fc996c60.chunk.js",
     "service-worker.js": "/citymeet/service-worker.js",
     "index.html": "/citymeet/index.html",
-    "main.590fe03f.css.map": "/citymeet/static/css/main.590fe03f.css.map",
-    "main.23d751fa.js.map": "/citymeet/static/js/main.23d751fa.js.map",
+    "main.1b2bd587.css.map": "/citymeet/static/css/main.1b2bd587.css.map",
+    "main.73ce5d78.js.map": "/citymeet/static/js/main.73ce5d78.js.map",
     "787.fc996c60.chunk.js.map": "/citymeet/static/js/787.fc996c60.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.590fe03f.css",
-    "static/js/main.23d751fa.js"
+    "static/css/main.1b2bd587.css",
+    "static/js/main.73ce5d78.js"
   ]
 }
