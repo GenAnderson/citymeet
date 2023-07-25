@@ -47,13 +47,13 @@ Serverless, PWA using React and a TDD approach
 **_User Story: As a user, I should be able to specify the number of events shown, so that I can control how many events I see._**
 
 **Scenario 1**: When user hasn’t specified a number, 32 is the default number
-**Given** no number was specified
-**When** the user searches a city
-**Then** 32 events will be listed at a time
+**Given** main page is open
+**When** no number entered
+**Then** 32 events will be listed by default
 
 **Scenario 2**: User can change the number of events they want to see
-**Given** user enters a number
-**When** the user searches a city
+**Given** main page is open
+**When** user enters a number
 **Then** events will list by the number they specified
 
 ### FEATURE 4: USE THE APP WHEN OFFLINE
