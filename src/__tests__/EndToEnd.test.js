@@ -54,7 +54,21 @@ describe("filter events by city", () => {
     browser.close();
   });
 
-  test("user hasn't searched for any city", () => {});
-  test("user opens the app", () => {});
-  test("user should see the list of all upcoming events", () => {});
+  test("when user hasn't searched for a city, show upcoming events from all cities", async () => {
+    const events = await page.$$eval(".event", (e) => e.length);
+    expect(events).toBe(32);
+  });
+
+  test("user should see a list of suggestions when they search for a city", async () => {
+    const suggestions = await page.$(".suggestions");
+    await page.click(".city");
+    expect(suggestions).toBeDefined();
+  });
+
+  test("user can select a city from the suggested list", async () => {
+    await page.type(".city", "Berlin");
+    const suggestion = await page.$(".suggestion");
+    await page.click(".suggestion");
+    expect(suggestion).toBeDefined();
+  });
 });

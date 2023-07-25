@@ -70,8 +70,6 @@ describe("<App/> integration", () => {
     const allEvents = await getEvents();
     const filteredEvents = allEvents.slice(0, NumberOfEventsInput.value);
 
-    console.log(NumberOfEventsInput.textContent);
-
     expect(allRenderedEventItems.length).toBe(filteredEvents.length);
   });
 });
