@@ -1,8 +1,17 @@
 # Meet App
 
-Users can search for a city and get a list of events hosted in there.
+Users can search for a city and get a list of events hosted there.
 
-Serverless, PWA using React and a TDD approach
+This is a serverless PWA using React and a TDD approach as well as the Google Calendar API.
+
+## Features
+
+- Filters events by city
+- Use the app offline
+- Adjust show/hide city event details
+- Enter how many events you want to see at a time
+- Chart visualization provided that adjusts according to the search results
+- Uses AWS token for authorization
 
 ### FEATURE 1: FILTER EVENTS BY CITY
 
